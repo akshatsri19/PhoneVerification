@@ -49,43 +49,56 @@ JWT_SECRET=supersecretkey
 TWILIO_ACCOUNT_SID=<your-twilio-account-sid>
 TWILIO_AUTH_TOKEN=<your-twilio-auth-token>
 TWILIO_VERIFY_SERVICE_SID=<your-twilio-verify-service-sid>
+```
 
 📦 Setup & Installation
 
 1. Clone the Repository
--git clone https://github.com/akshatsri19/PhoneVerification.git
--cd PhoneVerificationV4
+```
+git clone https://github.com/akshatsri19/PhoneVerification.git
+cd PhoneVerificationV4
+```
 
 2. Backend Setup
 Navigate to the backend folder and install dependencies.
--cd backend
--npm install
-
+```
+cd backend
+npm install
+```
 3. Frontend Setup
 Navigate to the frontend folder and install dependencies.
--cd ../frontend
--npm install
-
+```
+cd ../frontend
+npm install
+```
 4. Environment Setup
 Create a .env file inside backend/
 
 5. Running Locally
 Start Backend (Local)
--cd backend
--npm run start
+```
+cd backend
+npm run start
+```
 Backend will run on: http://localhost:5000 (if using serverless-offline)
 
 6. Start Frontend (React)
--cd frontend
--npm start
+```
+cd frontend
+npm start
+```
 Frontend will be available at: http://localhost:3000
 
 7. Deploy Backend to AWS Lambda + API Gateway
 Install Serverless Framework globally
--npm install -g serverless
+```
+npm install -g serverless
+```
 Deploy backend using Serverless Framework
--cd backend
--serverless deploy
+```
+cd backend
+serverless deploy
+```
 After deployment, note the API Gateway URL printed in the terminal. This URL will be used in the frontend to call the deployed backend.
 
 7. Set API URL in Frontend
