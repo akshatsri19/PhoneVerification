@@ -6,7 +6,7 @@ provider:
   runtime: nodejs18.x
   region: us-east-1
   environment:
-  #Replace with your own environment variables
+   #Replace with your own environment variables
    # MONGO_URI: ${env:MONGO_URI}
    # JWT_SECRET: ${env:JWT_SECRET}
    # TWILIO_ACCOUNT_SID: ${env:TWILIO_ACCOUNT_SID}
@@ -23,6 +23,8 @@ functions:
           path: /{proxy+}
           method: any
           cors: true
+      - schedule:
+          rate: rate(5 minutes)
 
 plugins:
   - serverless-offline

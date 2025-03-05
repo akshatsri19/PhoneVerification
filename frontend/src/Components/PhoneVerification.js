@@ -5,7 +5,7 @@ const PhoneVerification = () => {
     const [phoneNumber, setPhoneNumber] = useState('');
     const [code, setCode] = useState('');
     const [step, setStep] = useState(1);
-    const BASE_URL = 'https://5spz97yxgk.execute-api.us-east-1.amazonaws.com/dev/api/users';
+    const BASE_URL = 'https://g0tygp45hj.execute-api.us-east-1.amazonaws.com/dev/api/users';
 
     const handleSendCode = async () => {
         try {
