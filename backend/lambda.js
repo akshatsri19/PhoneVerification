@@ -1,6 +1,6 @@
 const serverless = require('serverless-http');
 const app = require('./app');
-const connectDB = require('./db'); // Import the new connection handler
+const connectDB = require('./db'); 
 
 let isColdStart = true;  // Track cold start
 

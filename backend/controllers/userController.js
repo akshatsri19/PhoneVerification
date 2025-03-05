@@ -7,6 +7,8 @@ exports.registerPhoneNumber = async (req, res) => {
 
     const { phoneNumber } = req.body;
 
+    // Added log statementes to track errors
+
     if (!phoneNumber) {
         console.error("No phone number provided");
         return res.status(400).json({ message: "Phone number is required" });
